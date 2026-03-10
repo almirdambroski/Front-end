@@ -1,0 +1,36 @@
+<form action="">
+                        <label for="nome">Nome:</label>
+                        <input type="email" id="nome" name="nome" required></br>
+
+                        <label for="nome">Email:</label>
+                        <input type="email" id="email" name="email" required></br>
+
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" required>
+                    </br>
+
+                        <label for="assunto">Assunto:</label>
+                        <select name="assunto" id="assunto">
+                            <option value="value">Orçamento</option>
+                            <option value="value">Dúvida</option>
+                            <option value="value">Outro</option>
+                        </select>
+                        </form>
+                    </br>
+
+                        </br>
+                        <label for="menssagem">Digite sua mensagem:</label>
+                        </address></address>
+                    </br>
+                        <textarea name="menssagem" id="menssagem" cols="30" rows="10" required>
+                        </textarea>
+
+                        </br>
+                        </br>
+                        
+                        <input type="checkbox" id="incricao" name="inscricao" >
+
+                        <label for="inscrito">Deseja receber minha later: fique por dentro.</label>
+                        <input type="submit" value="Enviar menssagem:">
+                        <!-- Consulte o site https://www.w3schools.com/ para informações completa sobre formulário-->                 
+                    </form>
