@@ -1,0 +1,29 @@
+<table>
+            <thead> <!-- cabeçalho da tabel -->
+                <tr> <!-- linha -->
+                    <th>Tecnologia</th> <!-- coluna -->
+                    <th>Nivel</th>
+                    <th>Descrição.</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>Iniciante</td>
+                    <td>Capaz de construir estrutura de páginas responsivas </td>
+                </tr>
+
+                <tr>
+                    <td>Css</td>
+                    <td>Instermediário</td>
+                    <td>Experiencia em flexboa, grid e animação Css </td>
+                </tr>
+
+                <tr>
+                    <td>JavasScript</td>
+                    <td>Avançado</td>
+                    <td>Desenvolvimento de scripts ao lado do cliente para interações</td>
+                </tr>
+
+            </tbody>
+        </table>
