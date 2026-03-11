@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=p, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+p{/*Favo inspencional no element do navegador*/
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+
+     }
+    .block{/*Ocupa a linha toda*/
+        display: block;/*Permite modificação*/
+        color: blueviolet;
+    }
+
+
+    .in_line{/*Aceita elementos um ao lado do outro*/
+        display: inline;
+        color: brown;
+        margin-top: 20px;/*não permite modificação*/
+   
+    /*div, p. article, h1. ja vem com displey block por padrão para se posicionar na tela*/
+    /*displey in line - Ocupam somente o epsaço necessário para ocupar na linha*/
+
+}
+    </style>
+</head>
+<body>
+    <p>Texto do paragráfo.</p>
+    <p>Texto do paragráfo.</p>
+
+    <p class="block">Parágrafo block</p>
+    <p class="in_line">Parágrafo in-line</p><p class="in_line">Parágrafo in-line</p>
+    <p class="in_line">Parágrafo in-line</p>
+</body>
+</html>
