@@ -1,0 +1,74 @@
+
+*{/*seletor universal - Ele atribui uma regras para todos os elementos que não tiver um regra definda*/
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*
+seletor do tipo tag de identificador unico
+p
+div  usa # no css
+a
+id   -não é recomendado que usa um mesmo id para varios elementos. Pode gerar problemaws futuramente
+*/
+
+/* / Super recomendado quando quer que tenha as mesma caracteristica reutilizando regras no css
+class - usa .claas no css
+*/
+
+div{
+    height: 200px;
+    color: black;
+}
+
+
+p ~ a{/* tag irmão adjasente Aqui, não importa se existem 1 ou 10 parágrafos após o h2; todos os que forem "irmãos" dele receberão a cor cinza.p*/
+    font-weight: bold;
+    color: red;
+}
+p + a{/* Imagine que você quer que todo parágrafo que venha logo após um título tenha uma letra maior.*/
+    font-weight: bold;
+    color: red;
+}
+p > a{/* Seletor filho - O símbolo de "maior que" (>) seleciona apenas os elementos que são filhos diretos do pai.
+     Isso significa que ele ignora "netos" ou elementos que estejam mais profundamente aninhados.*/
+    font-weight: bold;
+    color: rgb(247, 0, 255);
+}
+p  a{/* Seletor decendente - ele seleciona qualquer elemento que esteja dentro do pai, não importa a profundidade (filhos, netos, bisnetos, etc.)..*/
+    font-weight: bold;
+    color: rgb(102, 255, 0);
+}
+
+/*
+p <p> seleletor de elemento
+id #my-ai seleltor de id
+id=<my-id> 
+.class   class=<my-class>seleltor de class
+img - seletor de atributitos
+a:houver seletor de pseudoclass 
+
+*/
+
+
+/* HTML DO CSS
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylo.css">
+</head>
+<body>
+    <p>Texto do paragrafo</p>
+    <div>
+        <p><!--decendente da div-->
+            <a href="#">Link </a><!--tag link é filho do paragrafo-->
+        </p>
+    </div>
+   
+    <a  href="#">Link</a>
+    <a  href="#">Link</a>
+</body>
+</html> */
