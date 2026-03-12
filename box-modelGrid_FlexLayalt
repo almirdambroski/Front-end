@@ -1,0 +1,88 @@
+<!--tecnica de alinhar o elemento pai ao elemento filho-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /*
+        Joque o game para trainas flexbomx
+        https://flexboxfroggy.com/
+        Quando na verdade vamos utilizar overflow:
+        Css Grid Layalt: é mais  adquado para para Lauolt compexos
+        Box Model: é a base de tudo
+        Flex box: layalte simple e menores
+
+
+        Grid= bidirecional pode criar layalt em duas direção linhas e colunas
+            Ideal para layalt que são complexos e estruturados com varias seção e grades de produtos
+            oferece alinhamento precisos de posicionamento e alinhamento na grade
+            pode ter alinhamentos flexivel em amas as direções, linhas e colunas
+
+        flex box= inidimencional . interessante para organizar elementos em uma direção, horizontal e vertical.
+            indicado para alinhas elementos em uma linha ou colunas
+            controle e alinhamento no eixo principal e transversal
+            itens com tamanhos flexiveis no eixo principal
+            
+
+        */
+        /*para responsividadae se usa display fles*/
+        /*flex containe tem poder de trabalhar no dois eixo: x e y*/
+
+        /*flex direction defini e direção - colun e row - row-revers*/
+        .container{
+            background-color: blue;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+            width: 110px;
+            height: 200px;
+            display: flex; /*para caixa flexivel e se movimento horizontal em relação ao pai*/
+            flex-direction: row;/*este é o padrão*/ 
+            /* flex-direction: row-reverse; invert a linha
+                column muda para coluna
+                column muda para coluna invertidade           
+            */
+            /* justify-content: flex-start; *//* star = padrão, end muda direção, betwem divide na linha, aroud separa proporcional*/
+            align-items:stretch;   /*star=padrão,  end= empura para o fim mesmo aumentando a div, center-cenrto, stetch=*/
+            flex-wrap: nowrap; /*no-wrap valor padrão é para nao quebrar as linhas, wrap=quebre as linhas*/
+            align-content: spce-between;/*ajuda alinha apenas quando usar flex wrap(manipula espaços na linha) teste as diversas opções*/
+            gap: 10px; /*define eswpaçamento entre os px (serve para laterais e entre as linhas)*/
+            column-gap: 100px; /*apenas as distancias laterais entre entre os itens vai os px defiido. Obs: vai precisar definir o flex wrpa como nowrap. Resultado: conserva o espaçamento lateral*/
+           /* row-gap: 20px; /*Adiciona espaçamento entre as linhas. Obs: Precisa mudar flex-direction para wrap*/
+           
+                                       
+
+        }
+        .box{
+            height: 50px;
+            width: 50px;
+            border: 3px solid #000;
+            border-radius: 3px;     
+        }
+        #box1{
+            background-color: aquamarine;
+            flex-grow: 1; /*basta que estes itens cresça até ocupar todos os espaços no conteiner. Obs: o umero define a proporção que deseja aumentar*/
+        }
+        #box2{
+            background-color: rgb(53, 27, 113);
+            flex-grow: 1;
+        }
+        #box3{
+            background-color: rgb(255, 189, 127);
+            flex-grow: 1;
+        }
+        
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="box" id="box1" >Div 1</div>
+        <div class="box" id="box2">Div 2</div>
+        <div class="box" id="box3">Div 3</div>
+
+    </main>
+    
+</body>
+</html>
