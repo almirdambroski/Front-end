@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio - Almir A Dambroski</title>
+    <link rel="stylesheet" href="stylo.css">
+    <style>
+        body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+header {
+  background-color: rgb(63, 63, 63);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+main {
+  display: grid;
+  
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));/*Tamanho minimo e tamanho máximo da page*/
+  gap: 20px;
+  padding: 20px;
+}
+.content {
+  background-color: #c6c6c6;
+  padding: 2px;
+  border-radius: 3px;
+}
+footer {
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0; /*ficado na posição zero do footer*/
+  width: 100%;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bem vindo ao meu site</h1>
+    </header>
+    <main>
+        <section class="content">
+            <h2>Sobre min</h2>
+            <p>Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido pegou uma bandeja de tipos e os misturou para criar um livro de amostras de tipos. Ele sobreviveu não apenas a cinco séculos, mas também à transição para a editoração eletrônica,</p>
+        </section>
+        <section class="content">
+            <h2>Meus serviços</h2>
+            <p>Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido pegou uma bandeja de tipos e os misturou para criar um livro de amostras de tipos. Ele sobreviveu não apenas a cinco séculos, mas também à transição para a editoração eletrônica,</p>
+        </section>
+        <section class="content">
+            <h2>Minhas habilidades</h2>
+            <p>Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido pegou uma bandeja de tipos e os misturou para criar um livro de amostras de tipos. Ele sobreviveu não apenas a cinco séculos, mas também à transição para a editoração eletrônica,</p>
+        </section>    
+    </main>
+    <footer>
+        <p>©Todos os diretiros autorais reservados.</p>
+
+    </footer>
+
+    
+</body>
+</html>
